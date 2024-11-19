@@ -1,1 +1,1 @@
-# home-care-medication-platform-front
+# home-care-medication-platform-interface
