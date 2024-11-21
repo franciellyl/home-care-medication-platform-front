@@ -4,6 +4,7 @@
     text-align: center;
     padding: 20px;
   }
+
 body {
     background-color: #e8e8e8;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -45,6 +46,10 @@ li a:hover {
 
 h1 {
     color: #3F704D;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
+
+
   
