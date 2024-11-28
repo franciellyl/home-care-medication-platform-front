@@ -15,6 +15,7 @@
     --vivid-pink: oklch(69.02% 0.277 332.77);
     --hot-red: oklch(61.42% 0.238 15.34);
     --orange-red: oklch(63.32% 0.24 31.68);
+    --blue-pigment: #1E6784;
 
     --gray-900: oklch(19.37% 0.006 300.98);
     --gray-700: oklch(36.98% 0.014 302.71);
@@ -46,7 +47,7 @@
 
   h1 {
     font-size: 3.125rem;
-    color: var(--gray-900);
+    color: var(--blue-pigment);
     font-weight: 500;
     line-height: 100%;
     letter-spacing: -0.125rem;
@@ -160,6 +161,43 @@
 
   .social-links a:hover svg path {
     fill: var(--gray-900);
+  }
+
+  .menu {
+    background-color: var(--blue-pigment);
+    padding: 10px;
+  
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  
+      li {
+        margin-right: 15px;
+  
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 16px;
+          font-weight: bold;
+          transition: color 0.3s;
+  
+          &:hover {
+            color: #1abc9c;
+          }
+  
+          &.active {
+            color: #f39c12;
+          }
+        }
+      }
+    }
+  }
+
+  .menu a.active {
+      font-weight: bold;
+      color: blue;
   }
 
   @media screen and (max-width: 650px) {
@@ -330,7 +368,7 @@
     <li><a routerLink="/about" routerLinkActive="active">About</a></li>
     <li><a routerLink="/medications" routerLinkActive="active">Medications</a></li>
     <li><a routerLink="/patients" routerLinkActive="active">Patients</a></li>
-    <li><a routerLink="/routes" routerLinkActive="active">Routes</a></li>
+    <li><a routerLink="/rotas" routerLinkActive="active">Routes</a></li>
   </ul>
 </nav>
 <router-outlet></router-outlet>
@@ -344,4 +382,4 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 
-<router-outlet />
+<!-- <router-outlet /> -->
