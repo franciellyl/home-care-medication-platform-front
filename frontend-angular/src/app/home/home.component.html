@@ -1,0 +1,5 @@
+<div *ngFor="let paciente of pacientes" class="patient-card" [ngClass]="getStatusClass(paciente)">
+    <h3>{{ paciente.nome }}</h3>
+    <p>Status: {{ paciente.status }}</p>
+  </div>
+  
